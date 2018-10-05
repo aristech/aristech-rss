@@ -1,16 +1,16 @@
 <?php
 /**
- * 
+ *
  * @package AristechBooking
  */
 
 
 if (!defined('WP_UNINSTALL_PLUGIN')) {
     die;
-} 
+}
 
 global $wpdb;
-$array = array( 'aristech_booking_url','aristech_title','aristech_text','aristech_btn','aristech_tel','aristech_radio','aristech_color_tt','aristech_color_tb','aristech_color_st','aristech_color_ft','aristech_color_fb','aristech_color_bt','aristech_color_bb','aristech_image',);
+$array = array( 'aristech_options','aristech_title','aristech_max_posts','aristech_radio','aristech_tel','aristech_radio');
 
 foreach ($array as $item) {
     $item = esc_sql( $item );
